@@ -1,28 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Vegan House</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>git</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/prueba.css">
+    
+
 </head>
-<body>
-    <div class="texto">
-        <h1>La caída de los titanes</h1>
-        <p>La caída de los titanes es un cuadro del pintor Cornelis van Haarlem, pintado en torno a 1588, que se encuentra en la Galería Nacional de Dinamarca de Copenhague. Van Haarlem representa el desenlace de la Titanomaquia, la guerra de Zeus y sus aliados los Hecatónquiros y los Cíclopes contra su padre Crono y sus hermanos los Titanes. La Teogonía de Hesiodo es la fuente principal de este mito, poco representado en la Antigüedad.</p>
-    </div>  
+<body> 
+  <section class="header sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><span class="logo">Vegan</span> world.</a>
+        <button class="navbar-toggler menu-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="almacen.html">Almacen</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre nosostros</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contactenos</a>
+            </li> 
+            <li class="search_bar ipad-d-none toggle-overlay">
+               <span class="d-none d-lg-block">
+                  <a href="#"><i class="fas fa-search"></i></a>
+               </span>
+               <span class="d-lg-none">
+                 <a href="#">Search</a>
+               </span>
+            </li> 
+          </ul>
+        </div>
+      </nav>
+    </div> 
+  </section>
 
-    <div class="foto">
-        <img src="img/la_caida_de_los_titanes.jpg" alt="">
+  <div class="search-overlay">
+    <div class="outer-close toggle-overlay">
+      <a class="close"><span></span></a>
+    </div>
+    <form method="get" class="fullscreen-searchform" action="#">
+      <input class="search-box" name="s" placeholder="Search..." autocomplete="off">
+      <i class="fa fa-search fullscreen-search-icon"></i>
+    </form>
+  </div>
+
+  <section class="banner_section" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 bg-hero">
+          <div class="banner_content">
+            <div class="underline"></div>
+            <h2>La revolución vegana llegó!</h2>
+            <button type="button" class="main-btn">
+              <div class="effect"></div>
+              <a href="#saberMas"><span>Conocé más</span></a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-4">
+          <a href="#">
+            <div class="infobox active" id="saberMas">
+             
+              <div class="infobox-content">
+                <h3 class="title">Nuestro proposito</h3>
+                <p>es que más hogares puedan acceder a alimentos reales y sanos, libres de venenos, hechos artesanalmente y en Argentina, que no dañan el ecosistema y la salud.</p> 
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4">
+          <a href="#">     
+              <div class="infobox">
+                  
+                  <div class="infobox-content">
+                      <h3 class="title">Servicio al consumidor</h3> 
+                      <p>Al ser una empresa familiar uno de nuestros pilares es la comunicación, y por eso tratamos de que ustedes sean más que solo clientes y sean parte de esta familia.</p>                         
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-4">
+          <a href="#">     
+              <div class="infobox">
+                  <div class="infobox-content">
+                      <h3 class="title">Innovación</h3> 
+                      <p>Desde nuestra parte estamos constantemente innovando nuestra forma de cosechar para que los productos que recibas sean siempre de la mejor calidad.</p>                         
+                  </div>
+              </div>
+          </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="works" id="Works">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="section_headline">
+                <h2>Recetas.</h2>
+                <p>NO ES DIFÍCIL SER VEGANO, SOLO HAY QUE APRENDER A COCINAR</p>
+              </div>
+              <button type="button" class="main-btn">
+                <div class="effect"></div>
+                <a href="productos.html"><span>Explorá</span></a>
+              </button>
+            </div>
+            <div class="col-sm-12 pt-5">
+              <section class="projects owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta00.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Tarta toffee</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta01.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Croquetas de lenteja</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta02.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Medallones de poroto y choclo</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta03.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Ribs veganos a la barbacoa</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta04.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Interior Design</h2>
+                      <p>Mousse de chocolate</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta05.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Hamburguesa crispy simil pollo</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta06.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Canastitas de carne y cheddar veganas</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project_card">
+                    <img src="img/receta07.jpg" class="img-fluid">
+                    <div class="project_category">
+                      <h2>Pancho con provoleta vegana</h2>
+                    </div>
+                  </div>
+                </div> 
+              </section>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+  </section>
+
+<section class="footer" id="Contact">
+  <footer>
+    <div class="footer_box">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <div class="widget-about"> 
+                <p>Siendo una huerta orgánica desde el 2016.</p>
+                <ul class="contact-details">
+                  <li>
+                    <i class="fas fa-phone-alt"></i> Llamenos:
+                    <a href="#">221-4176965</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope-open-text"></i>
+                    <a href="#">vegan_world@gmail.com</a>
+                  </li>
+                </ul>
+                <ul class="social_icons">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <div class="footer-menu">
+                <h4 class="footer-widget-title">Categorías populares</h4>
+                <ul>
+                  <li>
+                    <a href="#">Verduras</a>
+                  </li>
+                  <li>
+                    <a href="#">Frutas</a>
+                  </li>
+                  <li>
+                    <a href="#">Recetas</a>
+                  </li>
+                  <li>
+                    <a href="#">Sin TACC</a>
+                  </li>
+                  <li>
+                    <a href="#">Pastas secas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <div class="footer-menu">
+                <h4 class="footer-widget-title">Nosotros</h4>
+                <ul>
+                  <li>
+                      <a href="#">Conocenos</a>
+                    </li>
+                    <li>
+                      <a href="#">Almacen orgánico</a>
+                    </li>  
+                    <li>
+                      <a href="#">Recetas</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget">
+              <div class="footer-menu p-0">
+                <h4 class="footer-widget-title">Gracias!</h4>
+                <div class="widget-about"> 
+                  <p>Cada acierto nos motiva a seguir mejorando para que les llegue a cada uno de ustedes lo mejor de nosotros y cada tropiezo nos enseña y nos fortalece. Ser emprendedor es un desafío constante pero ustedes lo hacen más fácil.</p>     
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div>
-        <a href="tienda.html" class="btn">Comprar</a>
-    </div>
+    
+  </footer>
+</section>
 
-    <div>
-        <p>prueba de cambio de rama</p>
-    </div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
+
